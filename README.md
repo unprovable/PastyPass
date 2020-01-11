@@ -4,7 +4,7 @@ So, first off **DISCLAIMER**: This is experimental code and is under development
 
 ## How does it work?
 
-When you click the extension button, it essentially goes through your webpage, finds all the `<input` fields with `type="password"` (by just parsing the `document.getElementsByType` list) and then assigns them a new onpaste handler as follows:
+When you click the extension button, it essentially goes through your webpage, finds all the `<input` fields with `type="password"` (by just parsing the `document.getElementsByTagName` list) and then assigns them a new onpaste handler as follows:
 ```
       var inputFields = document.getElementsByTagName('input');
       for (var i = 0; i < inputFields.length; i++) {
