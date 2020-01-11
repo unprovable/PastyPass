@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+  
+    "name": "PastyPass",
+    "description": "This extension enables pasting passwords into password fields where they have been disabled.",
+    "version": "0.1",
+    "author": "Mark 'LargeCardinal' C.",
+  
+    "icons": {
+      "20": "icon20.png"
+    }, 
+    "browser_action": {
+          "default_title": "PastyPass",
+          "default_icon": {
+            "20":"icon20.png"
+          },  
+      "default_popup": "dashboard.html"
+    },
+      "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["pastypass.client.js"],
+        "run_at": "document_start"
+      }
+    ],
+    "permissions": [
+      "activeTab"
+    ]
+  }
