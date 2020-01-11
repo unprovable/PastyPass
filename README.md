@@ -21,7 +21,7 @@ Much of the magic I have taken from this blog post: https://www.smashingmagazine
 
 # How to Install...
 
-This package should be agnostic across several 
+This package should be agnostic across several different browsers and extension formats as they are _mostly_ homogenous. It almost certainly won't work on Safari, but I'm sure someone will fix that.
 
 ## Mozilla Firefox (or sim)
 
