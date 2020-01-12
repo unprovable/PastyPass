@@ -1,8 +1,7 @@
 
 // Generic browser handler code from here:
 // https://www.smashingmagazine.com/2017/04/browser-extension-edge-chrome-firefox-opera-brave-vivaldi/
-//window.browser = (function () {
-browser = (function() {
+window.browser = (function () {
     return window.msBrowser ||
         window.browser ||
         window.chrome;
