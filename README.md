@@ -27,6 +27,7 @@ This package should be agnostic across several different browsers and extension 
 
 1. Go to `about:debugging`
 1. click 'Load Temporary Add-on'
+1. Navigate to the `build/` directory and choose the extension zip file.
 1. The extension is now enabled
 
 The only problem with this is that you'll have to reload it every time you restart the browser. This will, ofc, change if and when it gets sent up to any platform.
@@ -36,7 +37,7 @@ The only problem with this is that you'll have to reload it every time you resta
 1. Go to `chrome://extensions`
 1. Enable the slider for 'Developer mode' (top right, usually)
 1. Click on 'Load Unpacked Extension'
-1. Navigate to the folder where the code is (it won't show the contents, normally)
+1. Navigate to the `build/` directory in this repo and select the extension zip file.
 1. The extension should now be loaded.
 
 ## Microsoft Edge
@@ -44,7 +45,8 @@ The only problem with this is that you'll have to reload it every time you resta
 1. Go to `about:flags`
 1. Check "Enable Developer Features"
 1. click on '...'
-1. 'Load Extension' and navigate to the code folder...
+1. 'Load Extension' and navigate to the `build/` folder
+1. Select the extension zip file
 1. Confirm 'Show button next to address bar'
 
 ## Brave Browser
